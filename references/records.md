@@ -23,6 +23,12 @@
 
 “方案完成”“已写入”“已验收”是不同状态。接收者无写权限时，交付待合并稿，标明下一责任人。不得因模板有某字段而反复索取与任务无关的信息。
 
+## 正式交付物目录
+
+目录条目使用 [deliverable-record.json](../templates/deliverable-record.json)。八个核心字段分别为 name（名称）、type（类型）、stable_url（固定入口）、current_version（当前版本）、status（状态）、owner（责任人）、last_modified（最后修改）、previous_version（上一版本）。可增加 platform_revision 与 last_event_id，便于核验具体内容及关联审计。
+
+状态可映射为 draft（草案）、pending_merge（待合并）、effective（生效）、archived（归档）；模板默认 draft。正文、目录、台账各自维护自己的语义：目录更新当前指针，台账只追加历史。读取与发布不一致的处理见 [活文档与发布](live-deliverables.md)。
+
 ## 审计事件
 
 通用机器可读模板见 [change-event.json](../templates/change-event.json)。项目可以沿用自己的字段名，保持以下语义即可：
@@ -36,6 +42,7 @@
 | recorded_by_instance | 实际补记台账的实例，可与执行者不同 |
 | occurred_at / recorded_at | 动作发生与记录时间，建议带时区；不以记录时间冒充发生时间 |
 | target / scope | 对象定位、具体修改部分及操作 |
+| deliverable_reference / change_summary | 可选：目录条目定位及别人可直接理解的具体差异；不能仅写“已更新” |
 | before_version / after_version | 实际版本或 UNKNOWN，不虚构版本号 |
 | diff_or_snapshot | 可核验差异或前后版本定位；敏感快照须受控 |
 | authorization_reference | 用户授权或有效规则中的具体范围 |
@@ -53,6 +60,8 @@
 - needs_verification：缺少证据，不能确定最终状态。
 
 事件只追加。发现错误时新增 correction 并引用原事件；规则替代新增 supersede，回滚新增 rollback。不得擦除原事件以制造无错历史。
+
+执行者通常直接追加自己的事件，无须统一交给事实维护者代记。代理补记必须同时保留原执行者与实际记录者，不能用代理身份冒充原执行身份。
 
 事件编号可按项目、日期和实例生成，或使用平台唯一 ID。编号重复检查再创建只减少意外重复，不能保证并发唯一；需要严格幂等时使用平台唯一约束、幂等键、锁或串行提交。出现重复事件时追加说明其关系，不悄悄删除。
 

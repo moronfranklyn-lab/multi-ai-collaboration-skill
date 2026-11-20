@@ -1,4 +1,4 @@
 interface:
   display_name: "多 AI 协作工作法"
-  short_description: "建立共享事实源、角色分工、任务交接与变更审计，让多个 AI 可追溯地协作"
+  short_description: "用共享事实源、固定交付物入口与各自留痕，让多个 AI 获取当前版本和具体改动"
   default_prompt: "使用 $multi-ai-collaboration，为我的项目建立可直接执行的多 AI 协作契约，并验证各实例的实际能力。"

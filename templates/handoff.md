@@ -5,6 +5,7 @@
 - 任务编号、目标与当前阶段：UNKNOWN
 - 用户授权与适用契约：UNKNOWN
 - 输入、来源版本及可访问位置：UNKNOWN
+- 正式交付物的目录条目、固定链接、状态头与 revision：UNKNOWN
 - 已确认事实与证据状态：UNKNOWN
 - 待验证假设与未决冲突：UNKNOWN
 - 本次交付物与验收标准：UNKNOWN
@@ -14,6 +15,7 @@
 - 不在本次范围内的工作：UNKNOWN
 - 基线版本、前版本保留与并发提交方式：UNKNOWN
 - 审计入口及任务关联事件：UNKNOWN
+- 本次具体差异、目录更新结果与实际记录者：UNKNOWN
 - 当前实际结果、失败项与待补记录：UNKNOWN
 - 下一责任人及其动作：UNKNOWN
 
