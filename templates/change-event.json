@@ -1,0 +1,23 @@
+{
+  "template": true,
+  "event_id": "UNKNOWN",
+  "task_id": "UNKNOWN",
+  "event_type": "UNKNOWN",
+  "proposed_by": "UNKNOWN",
+  "executed_by_instance": "UNKNOWN",
+  "platform_identity": "UNKNOWN",
+  "recorded_by_instance": "UNKNOWN",
+  "occurred_at": "UNKNOWN",
+  "recorded_at": "UNKNOWN",
+  "target": "UNKNOWN",
+  "scope": "UNKNOWN",
+  "before_version": "UNKNOWN",
+  "after_version": "UNKNOWN",
+  "diff_or_snapshot": "UNKNOWN",
+  "authorization_reference": "UNKNOWN",
+  "evidence": [],
+  "result": "needs_verification",
+  "audit_status": "needs_verification",
+  "related_event_ids": [],
+  "limitations": ["待填写模板；尚未发生任何真实操作"]
+}
