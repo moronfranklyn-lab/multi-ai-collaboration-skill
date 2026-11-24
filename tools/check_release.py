@@ -11,6 +11,7 @@ REQUIRED = {
     'SKILL.md', 'README.md', 'agents/openai.yaml',
     'references/protocol.md', 'references/records.md',
     'references/evaluation.md', 'templates/collaboration-contract.md',
+    'references/memory.md', 'templates/startup-index.md',
     'references/live-deliverables.md', 'templates/deliverable-record.json',
     'templates/handoff.md', 'templates/change-event.json',
     'tools/check_release.py', '.github/workflows/validate.yml', '.gitignore',

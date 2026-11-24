@@ -5,6 +5,7 @@
 - 任务编号、目标与当前阶段：UNKNOWN
 - 用户授权与适用契约：UNKNOWN
 - 输入、来源版本及可访问位置：UNKNOWN
+- 长期任务的启动索引、权威状态入口及需展开的相关章节（按需）：UNKNOWN
 - 正式交付物的目录条目、固定链接、状态头与 revision：UNKNOWN
 - 已确认事实与证据状态：UNKNOWN
 - 待验证假设与未决冲突：UNKNOWN
